@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iIh-XD-YxY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iy9-Fp-xc9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pGk-7q-rme">
+                                <rect key="frame" x="108" y="96" width="194" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zA8-wE-b5H">
+                                <rect key="frame" x="115" y="20" width="90" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Find konashi">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="find:" destination="2" eventType="touchUpInside" id="UC5-kT-PbV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beD-D9-ZEp">
+                                <rect key="frame" x="91" y="58" width="139" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Disconnect konashi">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnect:" destination="2" eventType="touchUpInside" id="mad-74-qYY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Brightness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBv-4m-txJ">
+                                <rect key="frame" x="20" y="96" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="beD-D9-ZEp" firstAttribute="top" secondItem="zA8-wE-b5H" secondAttribute="bottom" constant="8" symbolic="YES" id="2nF-By-3E2"/>
+                            <constraint firstItem="beD-D9-ZEp" firstAttribute="centerX" secondItem="zA8-wE-b5H" secondAttribute="centerX" id="6nB-ZU-HtQ"/>
+                            <constraint firstItem="zA8-wE-b5H" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" id="9J0-iw-Es0"/>
+                            <constraint firstItem="pGk-7q-rme" firstAttribute="top" secondItem="beD-D9-ZEp" secondAttribute="bottom" constant="8" symbolic="YES" id="Ku8-i9-zim"/>
+                            <constraint firstItem="TBv-4m-txJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="SXt-ln-q7A"/>
+                            <constraint firstAttribute="trailing" secondItem="pGk-7q-rme" secondAttribute="trailing" constant="20" symbolic="YES" id="TLU-BC-Jzy"/>
+                            <constraint firstItem="pGk-7q-rme" firstAttribute="leading" secondItem="TBv-4m-txJ" secondAttribute="trailing" constant="8" symbolic="YES" id="TxI-aa-pwN"/>
+                            <constraint firstItem="TBv-4m-txJ" firstAttribute="top" secondItem="beD-D9-ZEp" secondAttribute="bottom" constant="8" symbolic="YES" id="UZa-Sd-eoS"/>
+                            <constraint firstItem="zA8-wE-b5H" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="g0a-u9-gel"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brightnessSlider" destination="pGk-7q-rme" id="aPB-OP-6of"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

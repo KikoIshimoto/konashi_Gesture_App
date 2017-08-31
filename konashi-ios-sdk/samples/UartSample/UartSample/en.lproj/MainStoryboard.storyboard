@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vnq-rh-MOZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vy0-WB-z5c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3J-JV-5uX">
+                                <rect key="frame" x="96" y="37" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="2pp-AL-C3m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="find:" destination="2" eventType="touchUpInside" id="cbq-AO-jjg"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ready" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-EC-CpV">
+                                <rect key="frame" x="118" y="95" width="85" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="901-4S-YK9"/>
+                                    <constraint firstAttribute="height" constant="27" id="bT7-Cp-0Tt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6E-pZ-02a">
+                                <rect key="frame" x="96" y="172" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="2" eventType="touchUpInside" id="Sm5-XQ-5s4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D3J-JV-5uX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="37" id="6vc-9B-ndh"/>
+                            <constraint firstItem="n6E-pZ-02a" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="DQG-EN-4m0"/>
+                            <constraint firstItem="PS1-EC-CpV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="95" id="MLe-sl-aN5"/>
+                            <constraint firstItem="n6E-pZ-02a" firstAttribute="top" secondItem="3" secondAttribute="top" constant="172" id="NHY-QD-Njw"/>
+                            <constraint firstItem="n6E-pZ-02a" firstAttribute="trailing" secondItem="D3J-JV-5uX" secondAttribute="trailing" id="cgx-oX-8aV"/>
+                            <constraint firstItem="D3J-JV-5uX" firstAttribute="leading" secondItem="n6E-pZ-02a" secondAttribute="leading" id="iGI-Yt-8jb"/>
+                            <constraint firstItem="PS1-EC-CpV" firstAttribute="centerX" secondItem="D3J-JV-5uX" secondAttribute="centerX" id="m5a-QG-16k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusMessage" destination="PS1-EC-CpV" id="il5-Ik-smh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

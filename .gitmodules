@@ -1,0 +1,3 @@
+[submodule "konashi-ios-sdk"]
+	path = konashi-ios-sdk
+	url = https://github.com/YUKAI/konashi-ios-sdk.git

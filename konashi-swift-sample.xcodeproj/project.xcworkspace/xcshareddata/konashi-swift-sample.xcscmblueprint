@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E2FCDD34180D5BE597D1A38FAD3B5DBD523D3046",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E2FCDD34180D5BE597D1A38FAD3B5DBD523D3046" : 0,
+    "3118980FF8DD65BDD536677E3ED68BFB8E370768" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73D77EAC-2F4B-49CF-B5F8-CE5D741696F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E2FCDD34180D5BE597D1A38FAD3B5DBD523D3046" : "konashi-swift-sample\/",
+    "3118980FF8DD65BDD536677E3ED68BFB8E370768" : "konashi-swift-sample\/konashi-ios-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "konashi-swift-sample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "konashi-swift-sample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/YUKAI\/konashi-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3118980FF8DD65BDD536677E3ED68BFB8E370768"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kiryuxxu\/konashi-swift-sample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2FCDD34180D5BE597D1A38FAD3B5DBD523D3046"
+    }
+  ]
+}
